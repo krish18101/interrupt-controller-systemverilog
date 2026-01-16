@@ -43,5 +43,52 @@ The interrupt system is divided into small modules:
 
 ---
 
-## Project Structure
+
+
+## Simulation and Verification
+
+- RTL simulation was done using **Vivado XSim**.
+- After synthesis, **post-synthesis functional gate-level simulation (GLS)** was performed.
+- The synthesized gate-level schematic was inspected to observe LUTs, flip-flops, and clock buffers.
+
+This helped in understanding how SystemVerilog RTL maps to actual hardware primitives.
+
+---
+
+## Tools Used
+
+- SystemVerilog  
+- Xilinx Vivado (XSim)  
+- Post-synthesis functional simulation  
+
+---
+
+## Notes
+
+- This is an **FPGA-based project**, not an ASIC tape-out.
+- Gate-level view shown in screenshots is FPGA synthesized logic, not physical ASIC layout.
+- The project was created for **learning and practice purposes**.
+
+---
+
+## What I Learned
+
+- How interrupt controllers are structured internally  
+- Difference between RTL simulation and gate-level simulation  
+- How synthesis converts RTL into hardware primitives  
+- Importance of clean modular design in SystemVerilog  
+
+---
+
+## Future Improvements
+
+- Add assertions (SVA) for better verification  
+- Add an AXI-lite interface for configuration  
+- Support nested or programmable priorities  
+
+---
+
+## Author
+
+Student VLSI / Digital Design learner  
 
